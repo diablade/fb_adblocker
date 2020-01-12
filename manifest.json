@@ -1,0 +1,15 @@
+{
+  "manifest_version": 2,
+  "name": "fb adblocker",
+  "version": "0.0.6",
+  "description": "Dedicated Open-source fb Ad Blocker",
+  "author": "diablade",
+  "homepage_url": "https://github.com/diablade/fb_adblocker",
+  "content_scripts": [
+    {
+      "matches": ["*://*.facebook.com/*", "*://*.facebookcorewwwi.onion/*"],
+      "js": ["main.js"],
+      "run_at" : "document_idle"
+    }
+  ]
+}
